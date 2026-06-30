@@ -1,0 +1,362 @@
+:root {
+    --dark: #19191B;
+    --gray: #696871;
+    --purple: #5454D4;
+    --orange: #FF7143;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-padding: 120px;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+.header {
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    top: 0
+}
+
+main {
+    margin-top: 141px;  
+}
+
+.header_container, .hero_container, .logos_container, .feature_container, .audit_container, .subscription_container {
+    max-width: 1069px;
+    margin-inline: auto;
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    display: flex; 
+    gap: 49px;
+}
+
+.header_list-link {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    color: var(--gray)
+}
+
+.header_list-link:hover {
+    color: var(--dark);
+}
+
+.header_list-link.active {
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+}
+
+.header_button {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    padding: 19px 59px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.header_button:hover, .herobutton1:hover {
+    opacity: 90%;
+}
+
+
+
+.hero {
+    padding-block: 70px 0;
+}
+
+.hero_container {
+    position: relative;
+}
+
+
+.hero_image {
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+
+.hero_content {
+    max-width: 423px;
+    padding-block: 92px;
+}
+
+.hero_title {
+    letter-spacing: -2.5px;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 77px;
+}
+
+.hero_desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.63px;
+    line-height: 30px;
+    color: var(--gray);
+    margin-top: 30px;
+}
+
+.hero_buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.herobutton1 {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 19px 59px;
+    background-color: var(--purple);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hero_scroll {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 100px;
+}
+
+
+.logos {
+    padding-block: 30px;
+}
+
+.logos_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.features {
+    padding-block: 120px;
+
+}
+
+.feature_container {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature_content {
+    max-width: 459px;
+}
+
+.feature_title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -1.56px;
+}
+
+.feature_desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    color: var(--gray);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: -0.63px;
+}
+
+.feature_link {
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    font-weight: 500;
+    color: var(--purple)
+}
+
+.feature_link:hover {
+    text-decoration: underline;
+}
+
+.audit {
+    padding-block: 32px;
+}
+
+.audit_logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px;
+}
+
+.audit_logos_imgs {
+    text-align: center;
+}
+.audit_logos_title {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.75px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.audit_logos_desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.subscription {
+    padding-block: 118px 158px
+}
+
+.subscription_container {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+.subscription_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription_header_title {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1.88px;
+    line-height: 70px;
+}
+
+.subscription_tabs {
+    display: flex;
+    border-block: 5px solid #F7F7FB;
+    border-inline: 6px solid #F7F7FB;
+    border-radius: 10px;
+}
+
+.subscription_tab {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    border: none;
+    background: #F7F7FB;
+    padding: 17px 56px;
+    border-radius: 0 10px 10px 0;
+    color: var(--dark);
+    cursor: pointer;
+}
+.subscription_tab.active {
+    background: var(--purple);
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.subscription_plans {
+    display: grid;
+    grid-template-columns: 1fr 1.14fr 1fr;
+    gap: 17px;
+}
+
+.subscription_plan {
+    padding: 34px 23px 27px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subscription_plan-title {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.56px;
+    color: var(--gray);
+    font-weight: 700;
+}
+
+.subscription_plan-cost {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -1.03px;
+    line-height: 56px;
+    color: var(--dark);
+    margin-top: 22px;
+}
+
+.subscription_plan-cost > span {
+    font-size: 28px;
+}
+
+.subscription_plan-settings {
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.53px;
+    margin-top: 28px;
+    color: var(--gray);
+}
+
+.subscription_plan-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    padding-block: 19px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.subscription_plan.active .subscription_plan-button {
+    background: #9F3919;
+    color: white;
+}
+
+.subscription_plan.active {
+    background: var(--orange);
+}
+
+.subscription_plan.active .subscription_plan-title {
+    color: white;
+    opacity: 70%;
+}
+
+.subscription_plan.active .subscription_plan-cost, .subscription_plan.active .subscription_plan-settings {
+    color: white;
+}
+
+
